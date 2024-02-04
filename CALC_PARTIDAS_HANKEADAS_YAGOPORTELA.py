@@ -1,10 +1,7 @@
 vitorias = int(input("Digite o número de vitórias: "))
 derrotas = int(input("Digite o número de derrotas: "))
-
-
 def calcular_nivel(vitorias, derrotas):
   saldo = vitorias - derrotas
-
   if saldo < 10:
     nivel = "Ferro"
   elif 10 <= saldo < 20:
@@ -19,9 +16,6 @@ def calcular_nivel(vitorias, derrotas):
     nivel = "Lendário"
   else:
     nivel = "Imortal"
-
   return saldo,nivel
-
 saldo,nivel = calcular_nivel(vitorias, derrotas)
-
 print(f"O Herói tem saldo de {saldo} está no nível de {nivel}!!!")
